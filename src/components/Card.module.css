@@ -1,0 +1,80 @@
+.card{
+    width: 15rem;
+    height: 20rem;
+    margin:3rem ;
+    border-radius: 17px;
+    /*background: linear-gradient(145deg, #785a9c, #4c2977);*/
+   /* box-shadow:  11px 11px 22px #5c4578;*/
+   box-shadow:  7px 7px 40px #6a508b,
+             -7px -7px 40px #765899;
+    border: 2px solid rgb(44, 5, 80);
+    display: flex;
+    flex-direction: column;  
+    align-items: center;        
+    background: rgb(39,12,59);
+    background: linear-gradient(83deg, rgba(39,12,59,1) 0%, rgba(119,29,253,1) 50%, rgba(49,143,166,1) 100%);
+}
+
+.card img{
+    width: 60%;
+    margin: 10px 0px 1px 0px;
+    border-radius: 10px;
+    border: 2px solid rgb(44, 5, 80);
+}
+.card h2{
+    margin: 3px;
+}
+.textContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    margin: 10px;
+    font-size: small;
+   /* border: 2px solid rgb(44, 5, 80);
+    border-radius: 10px;
+    margin-bottom: 1px;
+    background: rgb(38,10,75);
+    background: linear-gradient(273deg, rgba(38,10,75,0.9220063025210083) 37%, rgba(0,212,255,1) 100%);*/
+}
+.nombre{
+    width: 80%;
+    color: rgb(16, 2, 29);
+    border: 2px solid rgb(44, 5, 80);
+    margin: 5px;
+    border-radius: 10px;
+    /*background: rgb(199, 177, 216);
+    background: linear-gradient(83deg, rgba(39,12,59,1) 0%, rgba(119,29,253,1) 50%, rgba(49,143,166,1) 100%);*/
+    background: rgb(38,10,75);
+    background: linear-gradient(72deg, rgba(38,10,75,0.9220063025210083) 3%, rgba(254,255,0,1) 100%);
+   
+}
+.btn {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(83deg, rgba(119,29,253,1) 50%, rgba(49,143,166,1) 100%);
+    position: relative;
+    top: 2%;
+    left: 40%;
+  }
+  .btn:hover {
+    background-position: right center;
+  }
+  .btn:active {
+    top: 2px;
+  }
