@@ -1,12 +1,11 @@
 import styles from './Card.module.css'
 
 
-export default function Card({name, status, species, gender, origin, image, onClose}) {
+export default function Card({name, status, species, gender, origin, image, onClose, id}) {
    return (
       <div className={styles.card}>
-         <button className={styles.btn} onClick={onClose}>X</button>
+         <button className={styles.btn} onClick={() =>onClose(id)}>X</button>
          <img src={image} alt={ `No se encuentra la imagen de ${name}`} />
-
          <h2 className={styles.nombre}>{name} </h2>
             <div className={styles.textContainer}>
                <h2>{status} </h2>
