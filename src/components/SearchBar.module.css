@@ -9,8 +9,8 @@
     margin-left: 20px;
     display: flex;
     flex-direction: row;
-    color: #8873b8;
-    border: 2px solid #8707ff;
+    color: #1BFD9C;
+    border: 2px solid ;
     border-radius: 10px;
     padding: 10px 25px;
     background: transparent;
@@ -28,7 +28,7 @@
     margin-top: 10px;
     margin-left: 10px;
     cursor: pointer;
-    color: #8873b8;
+    color: #1BFD9C;
     font-size: 15px;
     font-family: 'Abel', sans-serif;
     padding-left: 2.5%;

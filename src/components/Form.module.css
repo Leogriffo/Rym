@@ -1,0 +1,80 @@
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 95%;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: column;
+    
+}
+form{
+    color: #1BFD9C;
+    width: 200px;
+    height: 300px;
+    margin: 4px;
+    background: rgb(39,12,59);
+    background: linear-gradient(83deg, rgba(39,12,59,1) 0%, rgba(55,16,98,1) 26%, rgba(15,3,31,1) 44%, rgba(32,5,73,1) 66%, rgba(56,53,64,1) 77%, rgba(49,143,166,1) 100%);
+    border: 2px solid #1BFD9C;
+    border-radius: 10px;
+}
+input {
+    background-color: #212121;
+    max-width: 180px;
+    height: 10px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid #1BFD9C;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+  }
+  
+  input:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+
+button {
+    margin-top: 25px;
+    --green: #1BFD9C;
+    font-size: 10px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  }
+  
+  button:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
+  }

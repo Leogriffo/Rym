@@ -1,7 +1,8 @@
 .card{
+  
     width: 15rem;
     height: 20rem;
-    margin:3rem ;
+    margin:1rem ;
     border-radius: 17px;
     /*background: linear-gradient(145deg, #785a9c, #4c2977);*/
    /* box-shadow:  11px 11px 22px #5c4578;*/
@@ -16,8 +17,8 @@
 }
 
 .card img{
-    width: 60%;
-    margin: 10px 0px 1px 0px;
+    width: 65%;
+    margin: _0px 0px 2px 0px;
     border-radius: 10px;
     border: 2px solid rgb(44, 5, 80);
 }
@@ -43,7 +44,7 @@
 }
 .nombre{
     width: 80%;
-    color: rgb(16, 2, 29);
+    color: black;
     border: 2px solid rgb(44, 5, 80);
     margin: 5px;
     border-radius: 10px;
@@ -54,27 +55,42 @@
    
 }
 .btn {
-    min-width: 40px;
-    height: 40px;
+    /* min-width: 40px;
+    height: 70px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 7px 7px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
+    display: flex;
     outline: none;
-    border-radius: 50px;
+    border-radius: 90px;
     border: none;
     background-size: 120% auto;
     background-image: linear-gradient(83deg, rgba(119,29,253,1) 50%, rgba(49,143,166,1) 100%);
     position: relative;
-    top: 2%;
-    left: 40%;
+    top: -5px;
+    left: 40%; */
+
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    padding: 0.7em 1.5em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 2em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid rgb(65, 45, 95) ;
+    background-size: 120% auto;
+    background-image: linear-gradient(83deg, rgba(119,29,253,1) 50%, rgba(49,143,166,1) 100%);
+    
   }
-  .btn:hover {
-    background-position: right center;
-  }
-  .btn:active {
-    top: 2px;
-  }
+
+ 
