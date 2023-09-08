@@ -14,7 +14,7 @@ useEffect(() => {
          setIsFav(true);
       }
    });
-}, [myFavorites]);
+}, [myFavorites,id]);
 
 const handleFavorite = () => {
 if(isFav){
@@ -37,7 +37,7 @@ if(isFav){
       <button className={styles.btn}onClick={handleFavorite}>🤍</button>
    )
 }
-            <button className={styles.btn} onClick={() =>onClose(id)}>X</button>
+            <button className={styles.btn} onClick={() => onClose(id)}>X</button>
          </div>
          <img src={image} alt={ `No se encuentra la imagen de ${name}`} />
          <h2 className={styles.nombre}><Link to={`/detail/${id}`}>{name} | {id}</Link></h2>

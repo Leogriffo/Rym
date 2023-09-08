@@ -45,7 +45,7 @@ function login(userData){
  
  useEffect(() => {
    !access && navigate('/');
-  },  [access])
+  },[access, navigate])
 
 
    const onSearch = (id) =>{
