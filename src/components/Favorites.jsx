@@ -10,7 +10,7 @@ function Favorites(){
 
 const [aux, setAux] = React.useState(false)    
 
-const optionsGender = ["All", "male", "Female", "Genderless" , "unknown"]
+const optionsGender = ["All", "Male", "Female", "Genderless" , "unknown"]
 
 const dispatch = useDispatch()
 
@@ -27,12 +27,12 @@ const handleOrder = (event) => {
 
     return(
         <div>
-           <select onChange={handleOrder}>
+           <select  onChange={handleOrder}>
                <option value="Ascendente">ASCENDENTE</option>
                <option value="Descendente">DESCENDENTE</option>
            </select>
 
-           <select onChange={handlerFilter}>
+           <select  onChange={handlerFilter}>
             {optionsGender.map(option => 
                 <option key={option} value={option}>{option}</option> 
             )}

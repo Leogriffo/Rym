@@ -1,6 +1,7 @@
 import React ,{useEffect, useState} from "react";
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import style from "./Detail.module.css"
 
 
 function Detail () {
@@ -26,12 +27,13 @@ useEffect(() => {
     return(
        <div>
             {characterDeatil ? (
-                <div>
-                    <h2 style={{color: "white"}}>Nombre: {characterDeatil.name}</h2>
-                    <h4 style={{color: "white"}}>{characterDeatil.status} </h4>
-                    <h4 style={{color: "white"}} >{characterDeatil.species}</h4>
-                    <h4 style={{color: "white"}}>{characterDeatil.gender}</h4>
-                    <h4 style={{color: "white"}}>{characterDeatil.origin?.name}</h4>
+                <div className={style.ficha}>
+                    <h2 style={{color: "white"}}>Detalles:</h2>       
+                    <h3 style={{color: "white"}}>NOMBRE: {characterDeatil.name}</h3>
+                    <h4 style={{color: "white"}}>ESTADO: {characterDeatil.status} </h4>
+                    <h4 style={{color: "white"}}>ESPECIE: {characterDeatil.species}</h4>
+                    <h4 style={{color: "white"}}>GENERO: {characterDeatil.gender}</h4>
+                    <h4 style={{color: "white"}}>ORIGEN: {characterDeatil.origin?.name}</h4>
                     <img src={characterDeatil.image} alt="" />
                 </div>
             ) : <h3>Loading...</h3>}

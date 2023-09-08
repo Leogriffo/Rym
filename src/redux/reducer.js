@@ -18,7 +18,7 @@ function rootReducer (state= initialState, action){
                 return {
                     ...state,
                     myFavorites: updatedMyFavorites,
-                    allFavorites: updatedMyFavorites // Actualiza también allFavorites
+                    allFavorites: updatedMyFavorites 
                 };
             
         case FILTER_FAV:

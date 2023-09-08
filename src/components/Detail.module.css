@@ -1,0 +1,22 @@
+.ficha {
+    width: 15rem;
+    height: 26rem;
+    background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: auto;
+    font-family: inherit;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  
+img{
+    width: 8rem;
+    margin-top: -1rem;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+  
